@@ -1,4 +1,62 @@
 job_name:
-- dae
+- dae_alpha-controls
 train_path:
-- "/gpfswork/rech/vgn/ubc18vn/pendulum/pendulum/exp" 
+- "/gpfswork/rech/vgn/ubc18vn/pendulum/pendulum/exp"
+data_path:
+- "../../datasets/cartpole_optimal_control_bw_64"
+sample_duration:
+- 200
+delayed_dmd:
+- 1
+history:
+- 2
+ddmdc:
+- 1
+control_d:
+- 1
+dataset_type:
+- pendulum
+ae_out_dim:
+- 16
+n_frames_A:
+- 180
+ae_out_planes:
+- 16 32 64 64 32 16
+strides:
+- 1 1 1 1 1 1
+paddings:
+- 1 1 1 1 1 1
+linear_neurons_u:
+- 16
+lqr3:
+- 1
+rho_lqr_solver:
+- 1e-6
+muter_lqr_solver:
+- 1e-6
+mu_lqr_solver:
+- 1e-6
+eps:
+- 1e-7
+batch_size_train:
+- 16
+non_linearity_u:
+- tanh
+decode_u:
+- True
+alpha_ae_controls:
+- 1e-2
+- 1e-1
+- 1e-3
+- 1e-4
+- 1e-5
+alpha_ae_lqr_controls:
+- 1e-2
+- 1e-1
+- 1e-3
+- 1e-4
+- 1e-5
+lqr_explicit_terminal:
+- True
+lqr_tracking:
+- True
