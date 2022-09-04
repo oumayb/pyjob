@@ -43,8 +43,8 @@ eps:
 batch_size_train:
 - 16
 non_linearity_u:
-- tanh
-- relu
+- 'tanh'
+- 'relu'
 decode_u:
 - True
 alpha_ae_controls:
