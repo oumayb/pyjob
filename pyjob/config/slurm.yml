@@ -14,3 +14,5 @@ account:
 - vgn@gpu
 gpu_type:
 - v100-32g
+conda_dir:
+- "/gpfswork/rech/vgn/ubc18vn/miniconda3/" 
