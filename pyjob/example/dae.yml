@@ -1,0 +1,4 @@
+job_name:
+- dae
+train_path:
+- "/gpfswork/rech/vgn/ubc18vn/pendulum/pendulum/exp" 
