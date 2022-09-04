@@ -1,5 +1,5 @@
 job_name:
-- dae_alpha-controls
+- pendulum_dim
 train_path:
 - "/gpfswork/rech/vgn/ubc18vn/pendulum/pendulum/exp"
 data_path:
