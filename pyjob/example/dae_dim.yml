@@ -1,0 +1,53 @@
+job_name:
+- dae_alpha-controls
+train_path:
+- "/gpfswork/rech/vgn/ubc18vn/pendulum/pendulum/exp"
+data_path:
+- "../../datasets/pendulum_control_optimal_high_control_bw_64"
+sample_duration:
+- 200
+delayed_dmd:
+- 1
+history:
+- 2
+ddmdc:
+- 1
+control_d:
+- 1
+dataset_type:
+- pendulum
+n_frames_A:
+- 170
+ae_out_planes:
+- 16 32 64 64 32 16
+- 16 32 64 64 32 8
+- 16 32 64 64 32 32
+strides:
+- 1 1 1 1 1 1
+paddings:
+- 1 1 1 1 1 1
+linear_neurons_u:
+- 16
+- 8
+- 32
+lqr3:
+- 1
+rho_lqr_solver:
+- 1e-6
+muter_lqr_solver:
+- 1e-6
+mu_lqr_solver:
+- 1e-6
+eps:
+- 1e-7
+batch_size_train:
+- 16
+non_linearity_u:
+- tanh
+-relu
+decode_u:
+- True
+alpha_ae_controls:
+- 1
+alpha_ae_lqr_controls:
+- 1
