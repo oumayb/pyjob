@@ -9,4 +9,8 @@ n_cpus:
 time:
 - "20:00:00"
 job_log_dir:
-- "~/pyjob_logs/"
+- "/gpfswork/rech/vgn/ubc18vn/pyjob_logs/"
+account:
+- vgn@gpu
+gpu_type:
+- v100-32g
