@@ -45,14 +45,33 @@ non_linearity_u:
 decode_u:
 - True
 alpha_ae_controls:
-- 1e-2
+- 1e-3
+alpha_ae_lqr_controls:
+- 1e-5
+alpha_reco_first:
+- 1
+- 10
+- 100
 - 1e-1
+- 1e-2
 - 1e-3
 - 1e-4
 - 1e-5
-alpha_ae_lqr_controls:
-- 1e-2
+alpha_reco_last:
+- 1
+- 10
+- 100
 - 1e-1
+- 1e-2
+- 1e-3
+- 1e-4
+- 1e-5
+alpha_reco_lqr:
+- 1
+- 10
+- 100
+- 1e-1
+- 1e-2
 - 1e-3
 - 1e-4
 - 1e-5
